@@ -1,5 +1,7 @@
-package com.example.producing_web_service;
+package com.example.producing_web_service.formatter;
 
+import com.example.producing_web_service.generated.DateRequest;
+import com.example.producing_web_service.generated.GetDateRequest;
 import org.springframework.stereotype.Component;
 
 @Component

@@ -6,7 +6,7 @@
 //
 
 
-package com.example.producing_web_service;
+package com.example.producing_web_service.generated;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
