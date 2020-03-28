@@ -1,0 +1,13 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:gs="http://example.com/producing-web-service">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <gs:getDateRequest>
+            <gs:dateRequest>
+                <gs:day></gs:day>
+                <gs:month></gs:month>
+                <gs:year></gs:year>
+            </gs:dateRequest>
+        </gs:getDateRequest>
+    </soapenv:Body>
+</soapenv:Envelope>

@@ -3,7 +3,7 @@ package com.example.producing_web_service;
 import org.springframework.stereotype.Component;
 
 @Component
-public class DateFromatter {
+public class DateFormatter {
 
     public String getFormattedDate(GetDateRequest getDateRequest) {
         DateRequest request = getDateRequest.getDateRequest();

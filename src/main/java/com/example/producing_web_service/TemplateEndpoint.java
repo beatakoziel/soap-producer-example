@@ -8,20 +8,20 @@ import org.springframework.ws.server.endpoint.annotation.ResponsePayload;
 
 @Endpoint
 public class TemplateEndpoint {
-    private static final String NAMESPACE_URI = "http://spring.io/guides/gs-producing-web-service";
+    private static final String NAMESPACE_URI = "http://example.com/producing-web-service";
 
-    private DateFromatter dateFromatter;
+    private DateFormatter dateFormatter;
 
     @Autowired
-    public TemplateEndpoint(DateFromatter dateFromatter) {
-        this.dateFromatter = dateFromatter;
+    public TemplateEndpoint(DateFormatter dateFormatter) {
+        this.dateFormatter = dateFormatter;
     }
 
-    @PayloadRoot(namespace = NAMESPACE_URI, localPart = "getCountryRequest")
+    @PayloadRoot(namespace = NAMESPACE_URI, localPart = "getDateRequest")
     @ResponsePayload
     public GetDateResponse getFormattedDate(@RequestPayload GetDateRequest request) {
         GetDateResponse response = new GetDateResponse();
-        response.setFormattedDate(dateFromatter.getFormattedDate(request));
+        response.setFormattedDate(dateFormatter.getFormattedDate(request));
         return response;
     }
 
