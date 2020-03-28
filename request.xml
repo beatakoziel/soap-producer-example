@@ -4,9 +4,9 @@
     <soapenv:Body>
         <gs:getDateRequest>
             <gs:dateRequest>
-                <gs:day></gs:day>
-                <gs:month></gs:month>
-                <gs:year></gs:year>
+                <gs:day>21</gs:day>
+                <gs:month>09</gs:month>
+                <gs:year>1998</gs:year>
             </gs:dateRequest>
         </gs:getDateRequest>
     </soapenv:Body>
