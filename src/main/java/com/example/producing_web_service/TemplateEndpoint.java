@@ -10,19 +10,18 @@ import org.springframework.ws.server.endpoint.annotation.ResponsePayload;
 public class TemplateEndpoint {
     private static final String NAMESPACE_URI = "http://spring.io/guides/gs-producing-web-service";
 
-    private TemplateRepository templateRepository;
+    private DateFromatter dateFromatter;
 
     @Autowired
-    public TemplateEndpoint(TemplateRepository templateRepository) {
-        this.templateRepository = templateRepository;
+    public TemplateEndpoint(DateFromatter dateFromatter) {
+        this.dateFromatter = dateFromatter;
     }
 
     @PayloadRoot(namespace = NAMESPACE_URI, localPart = "getCountryRequest")
     @ResponsePayload
-    public GetTemplateResponse getCountry(@RequestPayload GetTemplateRequest request) {
-        GetTemplateResponse response = new GetTemplateResponse();
-        response.setDateFormatTemplate(templateRepository.findTemplate(request.getName()));
-
+    public GetDateResponse getFormattedDate(@RequestPayload GetDateRequest request) {
+        GetDateResponse response = new GetDateResponse();
+        response.setFormattedDate(dateFromatter.getFormattedDate(request));
         return response;
     }
 

@@ -1,45 +1,41 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://example.com/producing-web-service"
            targetNamespace="http://example.com/producing-web-service" elementFormDefault="qualified">
 
-    <xs:element name="getTemplateRequest">
+    <xs:element name="getDateRequest">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="name" type="xs:string"/>
+                <xs:element name="dateRequest" type="tns:dateRequest"/>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
 
-    <xs:element name="getTemplateResponse">
+    <xs:element name="getDateResponse">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="dateFormatTemplate" type="tns:dateFormatTemplate"/>
+                <xs:element name="formattedDate" type="xs:string"/>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
 
-    <xs:complexType name="dateFormatTemplate">
+    <xs:complexType name="date">
         <xs:sequence>
-            <xs:element name="name" type="xs:string"/>
-            <xs:element name="description" type="xs:string"/>
-            <xs:element name="format" type="xs:string"/>
-            <xs:element name="available" type="xs:boolean"/>
+            <xs:element name="day" type="xs:string"/>
+            <xs:element name="month" type="xs:string"/>
+            <xs:element name="year" type="xs:string"/>
         </xs:sequence>
     </xs:complexType>
 
-    <xs:complexType name="templateRequest">
+    <xs:complexType name="dateRequest">
         <xs:sequence>
-            <xs:element name="name" type="xs:string"/>
-            <xs:element name="description" type="xs:string"/>
-            <xs:element name="format" type="xs:string"/>
+            <xs:element name="day" type="xs:string"/>
+            <xs:element name="month" type="xs:string"/>
+            <xs:element name="year" type="xs:string"/>
         </xs:sequence>
     </xs:complexType>
 
-    <xs:complexType name="templateResponse">
+    <xs:complexType name="dateResponse">
         <xs:sequence>
-            <xs:element name="name" type="xs:string"/>
-            <xs:element name="description" type="xs:string"/>
-            <xs:element name="format" type="xs:string"/>
-            <xs:element name="available" type="xs:boolean"/>
+            <xs:element name="formattedDate" type="xs:string"/>
         </xs:sequence>
     </xs:complexType>
 
