@@ -13,19 +13,19 @@ Generated on: 2020.03.28 at 11:09:21 AM CET
       <package name="com.example.producing_web_service"/>
     </schemaBindings>
     <bindings scd="tns:getDateRequest">
-      <class ref="com.example.producing_web_service.GetDateRequest"/>
+      <class ref="com.example.producing_web_service.generated.GetDateRequest"/>
     </bindings>
     <bindings scd="~tns:dateRequest">
-      <class ref="com.example.producing_web_service.DateRequest"/>
+      <class ref="com.example.producing_web_service.generated.DateRequest"/>
     </bindings>
     <bindings scd="tns:getDateResponse">
-      <class ref="com.example.producing_web_service.GetDateResponse"/>
+      <class ref="com.example.producing_web_service.generated.GetDateResponse"/>
     </bindings>
     <bindings scd="~tns:date">
-      <class ref="com.example.producing_web_service.Date"/>
+      <class ref="com.example.producing_web_service.generated.Date"/>
     </bindings>
     <bindings scd="~tns:dateResponse">
-      <class ref="com.example.producing_web_service.DateResponse"/>
+      <class ref="com.example.producing_web_service.generated.DateResponse"/>
     </bindings>
   </bindings>
 </bindings>

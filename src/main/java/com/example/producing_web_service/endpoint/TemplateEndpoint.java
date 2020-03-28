@@ -1,5 +1,8 @@
-package com.example.producing_web_service;
+package com.example.producing_web_service.endpoint;
 
+import com.example.producing_web_service.formatter.DateFormatter;
+import com.example.producing_web_service.generated.GetDateRequest;
+import com.example.producing_web_service.generated.GetDateResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ws.server.endpoint.annotation.Endpoint;
 import org.springframework.ws.server.endpoint.annotation.PayloadRoot;

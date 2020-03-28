@@ -6,7 +6,7 @@
 //
 
 
-package com.example.producing_web_service;
+package com.example.producing_web_service.generated;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -15,12 +15,12 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for dateRequest complex type.
+ * <p>Java class for date complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="dateRequest"&gt;
+ * &lt;complexType name="date"&gt;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
@@ -36,12 +36,12 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "dateRequest", propOrder = {
+@XmlType(name = "date", propOrder = {
     "day",
     "month",
     "year"
 })
-public class DateRequest {
+public class Date {
 
     @XmlElement(required = true)
     protected String day;

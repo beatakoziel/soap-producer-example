@@ -6,7 +6,7 @@
 //
 
 
-package com.example.producing_web_service;
+package com.example.producing_web_service.generated;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -25,7 +25,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="formattedDate" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="dateRequest" type="{http://example.com/producing-web-service}dateRequest"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -36,36 +36,36 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "formattedDate"
+    "dateRequest"
 })
-@XmlRootElement(name = "getDateResponse")
-public class GetDateResponse {
+@XmlRootElement(name = "getDateRequest")
+public class GetDateRequest {
 
     @XmlElement(required = true)
-    protected String formattedDate;
+    protected DateRequest dateRequest;
 
     /**
-     * Gets the value of the formattedDate property.
+     * Gets the value of the dateRequest property.
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link DateRequest }
      *     
      */
-    public String getFormattedDate() {
-        return formattedDate;
+    public DateRequest getDateRequest() {
+        return dateRequest;
     }
 
     /**
-     * Sets the value of the formattedDate property.
+     * Sets the value of the dateRequest property.
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link DateRequest }
      *     
      */
-    public void setFormattedDate(String value) {
-        this.formattedDate = value;
+    public void setDateRequest(DateRequest value) {
+        this.dateRequest = value;
     }
 
 }
